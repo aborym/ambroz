@@ -1,0 +1,22 @@
+---
+layout: page
+title: Účetnictví už se nemusíte bát
+modified: 2013-01-18
+tags: [ucetnictvi, sluzby, zpracovani dani, finance]
+---
+
+<h2>Baví mě lidem ulehčovat práci a dělat skvělou reklamu.</h2>
+
+
+<p>Další informace o mně najdete na <a href="http://www.linkedin.com/in/filipambroz">LinkedIn</a>.
+Chcete se mnou spolupracovat? </p>
+
+<div markdown="0"><a href="{{ site.url }}/kontakt/" class="btn">Kontaktujte mě</a></div>
+
+<h2>Poslední články na mém blogu:</h2>
+
+<ul class="post-list">
+{% for post in site.posts limit:10 %} 
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d. %m. %Y" }}</time></span></a></article></li>
+{% endfor %}
+</ul>
