@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-experiment
 permalink: /ppc/
 title: PPC
 description: "Pomůžu Vám s efektivní reklamou online"

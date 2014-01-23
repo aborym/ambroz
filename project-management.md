@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-experiment
 permalink: /project-management/
 title: Project management
 modified: 2013-01-18
