@@ -39,6 +39,7 @@
 {% endif %}
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
+<!-- 
 <script>
   var _gaq = _gaq || [];
   var pluginUrl = 
@@ -54,26 +55,7 @@
   })();
 </script>
 
-<!-- leady.cz code -->
-<script type="text/javascript">
-  var leady_track_key="To0Ef8biB9zYeey3";
-  var leady_track_server=document.location.protocol+"//t.leady.cz/";
-  (function(){
-    var l=document.createElement("script");l.type="text/javascript";l.async=true;
-    l.src=leady_track_server+leady_track_key+"/L.js";
-    var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(l,s);
-  })();
-</script>
-
-<!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NRTGB3"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NRTGB3');</script>
-    <!-- End Google Tag Manager -->
+-->
 
 {% endif %}
 {% if page.comments %}{% include disqus_comments.html %}{% endif %}

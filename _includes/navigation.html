@@ -1,3 +1,14 @@
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PDJ9NK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PDJ9NK');</script>
+<!-- End Google Tag Manager -->
+
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
 	    <ul>
@@ -11,7 +22,7 @@
 			</li>
 	        {% endfor %}
 	        <!-- <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li> -->
-	        {% if site.search %}<li class="dosearch"><i class="icon-search"></i> Search</li>{% endif %}
+	        {% if site.search %}<li class="dosearch"><i class="icon-search"></i></li>{% endif %}
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->
@@ -20,7 +31,7 @@
 
 {% if site.search %}<div class="search-wrapper">
 	<div class="search-form">
-		<input type="text" class="search-field" placeholder="Search...">
+		<input type="text" class="search-field" placeholder="Hledat...">
 		<i class="icon-remove-sign icon-2x"></i>
 		<ul class="search-results post-list"></ul><!-- /.search-results -->
 	</div><!-- /.search-form -->
