@@ -12,16 +12,16 @@ owner:
   avatar:         bio-photo.jpg
   email:          filip@ambroz.cz
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
+  twitter:        https://twitter.com/Aborym
+  facebook:       https://www.facebook.com/Aborym
+  github:         https://github.com/aborym
   stackexchange:  
-  linkedin:       
+  linkedin:       https://www.linkedin.com/in/filipambroz
   instagram:      
   flickr:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:    https://plus.google.com/115921243987379721385
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-47285821-1   
