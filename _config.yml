@@ -1,7 +1,7 @@
 title:            Filip Ambrož
 description:      Projektový manažer se specializací na online marketing a vývoj aplikací
 logo:             site-logo.png
-disqus_shortname: 
+disqus_shortname: filipambroz
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
 url:              http://ambroz.cz
@@ -12,22 +12,22 @@ owner:
   avatar:         bio-photo.jpg
   email:          filip@ambroz.cz
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
+  twitter:        Aborym
+  facebook:       Aborym
+  github:         Aborym
   stackexchange:  
-  linkedin:       
+  linkedin:       Aborym
   instagram:      
   flickr:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:   https://plus.google.com/115921243987379721385 
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-47285821-1   
 google_verify:    JMGwW2Y-l6E_d8UKdz6cZ75AZUSfPDVCRBKyIXUxpHg
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:      FE4C52DB573295A110479ECF77FD780C
 
 # Links to include in top navigation
 # For external links add external: true
