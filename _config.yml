@@ -32,14 +32,14 @@ bing_verify:      FE4C52DB573295A110479ECF77FD780C
 # Links to include in top navigation
 # For external links add external: true
 links:
+
+
   - title: Salesforce
     url: /salesforce/
   - title: PPC
     url: /ppc/
   - title: Projektový management
     url: /project-management/
-  - title: Pro zaměstnance
-    url: /pro-zamestnance/
   - title: Kontakt
     url: /kontakt/
   - title: Blog
