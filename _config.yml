@@ -1,28 +1,28 @@
-title:            Filip Ambrož
+title:            Filip Ambrož 
 description:      Projektový manažer se specializací na online marketing a vývoj aplikací
 logo:             site-logo.png
 disqus_shortname: filipambroz
 search:           true
-
 # Change url to your domain. Leave localhost server or blank when working locally.
 url:              http://ambroz.cz
 
 # Owner/author information
 owner:
-name:           Filip Ambrož
-avatar:         bio-photo.jpg
-email:          filip@ambroz.cz
-# Social networking links used in footer. Update and remove as you like.
-twitter:        Aborym
-facebook:       Aborym
-github:         Aborym
-stackexchange:
-linkedin:       Aborym
-instagram:
-flickr:
-tumblr:
-# For Google Authorship https://plus.google.com/authorship
-google_plus:    https://plus.google.com/115921243987379721385
+  name:           Filip Ambrož
+  avatar:         bio-photo.jpg
+  email:          filip@ambroz.cz
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        Aborym
+  facebook:       Aborym
+  github:         Aborym
+  stackexchange:  
+  linkedin:       filipambroz
+  instagram:      
+  flickr:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/115921243987379721385
+
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-47285821-1
 google_verify:    JMGwW2Y-l6E_d8UKdz6cZ75AZUSfPDVCRBKyIXUxpHg
@@ -32,16 +32,18 @@ bing_verify:      FE4C52DB573295A110479ECF77FD780C
 # Links to include in top navigation
 # For external links add external: true
 links:
-- title: Salesforce
-url: /salesforce/
-- title: PPC
-url: /ppc/
-- title: Projektový management
-url: /project-management/
-- title: Kontakt
-url: /kontakt/
-- title: Blog
-url: /blog/
+  - title: Salesforce
+    url: /salesforce/
+  - title: PPC
+    url: /ppc/
+  - title: Projektový management
+    url: /project-management/
+  - title: Pro zaměstnance
+    url: /pro-zamestnance/
+  - title: Kontakt
+    url: /kontakt/
+  - title: Blog
+    url: /blog/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Prague
@@ -51,17 +53,20 @@ markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
+
 kramdown:
-auto_ids: true
-footnote_nr: 1
-entity_output: as_char
-toc_levels: 1..6
-use_coderay: false
-coderay:
-coderay_line_numbers:
-coderay_line_numbers_start: 1
-coderay_tab_width: 4
-coderay_bold_every: 10
-coderay_css: class
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
