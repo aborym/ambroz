@@ -22,7 +22,18 @@ DIČ: CZ8507205608
 
 
 Adresa sídla:
-
 Na Stuchlíkovci 737
-
 735 14 Orlová Lutyně
+
+Bankovní spojení:
+
+Airbank - CZK
+1200672017/3030
+
+PayPal - USD
+filip@ambroz.cz
+
+Coinbase - BTC
+1PA1j4MYid53FLZ2qCxCp8L34XqYYgaLiE
+
+![Coinbase wallet QR]({{ site.url }}/images/coinbase_qr.png)
