@@ -6,11 +6,7 @@ modified: 2014-05-10
 tags: [salesforce, ppc, projektovy management, online reklama]
 ---
 
-#Filip Ambrož
-
-
-###Projektový manažer se specializací na online marketing a vývoj aplikací
-
+Filip Ambrož
 
 [filip@ambroz.cz](mailto:filip@ambroz.cz)
 
