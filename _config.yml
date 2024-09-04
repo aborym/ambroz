@@ -4,7 +4,7 @@ logo:             site-logo.png
 disqus_shortname: filipambroz
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://ambroz.cz
+url:              https://ambroz.cz
 
 # Owner/author information
 owner:
@@ -12,8 +12,8 @@ owner:
   avatar:         filip-photo.png
   email:          filip@ambroz.cz
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        Aborym
-  facebook:       Aborym
+  twitter:        filipambroz
+  facebook:       filipambroz
   github:         Aborym
   stackexchange:  
   linkedin:       filipambroz
