@@ -1,16 +1,20 @@
 ---
-layout: page-experiment
+layout: page
 permalink: /project-management/
-title: Project management
-modified: 2013-01-18
-tags: [salesforce, salesforce implementace, salesforce konzultant, salesforce.com, projektove rizeni, project management]
+title: Řízení dodávek
 ---
 
-* Pomohu vám vytvořit nebo dodělat web
-* Zajistím a povedu vývoj aplikací
-* Zařídím integraci vašich oblíbených nástrojů do firemního CRM
+Specializuji se na řízení dodávek enterprise softwaru v náročných prostředích, kde jsou klíčové přesnost, bezpečnost a spolehlivost.
 
-Mám kontakty na vývojáře, grafiky, online marketéry i správce sítí a bezkonkurenční českou hostingovou službu.
+## Přístup k dodávce
 
+- **Agilní leadership** — vedení dodávkových týmů s důrazem na iterativní vývoj a kontinuální zpětnou vazbu
+- **Regulovaná odvětví** — zkušenosti s projekty ve finančních službách a obraně
+- **End-to-end odpovědnost** — od návrhu architektury přes implementaci až po produkční nasazení
+- **DevOps kultura** — CI/CD pipelines, automatizace, monitoring a observabilita
+
+## Technologické zaměření
+
+Vedu týmy pracující s moderními technologiemi — Azure cloud, Kubernetes, GitLab CI/CD a infrastrukturní automatizací. Každý projekt přistupuji s důrazem na škálovatelnost, bezpečnost a udržitelnost řešení.
 
 <div markdown="0"><a href="{{ site.url }}/kontakt/" class="btn">Kontaktujte mě</a></div>

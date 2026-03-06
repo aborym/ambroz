@@ -1,40 +1,43 @@
 <div class="navigation-wrapper">
-	<nav role="navigation" id="site-nav" class="animated drop">
-	    <ul>
-	        {% for link in site.links %}
-			<li>
-				{% if link.external %}
-					<a href="{{ link.url }}">{{ link.title }}</a>
-				{% else %}
-					<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-				{% endif %} 
-			</li>
-	        {% endfor %}
-	        <!-- <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li> -->
-	        {% if site.search %}<li class="dosearch"><i class="icon-search"></i></li>{% endif %}
-	    </ul>
-	</nav>
-</div><!-- /.navigation-wrapper -->
+  <nav aria-label="Hlavní navigace" id="site-nav">
+    <a href="{{ site.url }}" class="site-logo" rel="home" title="{{ site.title }}">
+      <img src="{{ site.url }}/images/{{ site.logo }}" width="40" height="40" alt="{{ site.title }}" loading="eager">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Otevřít menu">
+      <span class="nav-toggle-icon"></span>
+    </button>
+    <ul id="nav-menu">
+      {% for link in site.links %}
+      <li>
+        {% if link.external %}
+          <a href="{{ link.url }}" rel="noopener noreferrer">{{ link.title }}</a>
+        {% else %}
+          <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
 
-{% include browser-upgrade.html %}
-
-{% if site.search %}<div class="search-wrapper">
-	<div class="search-form">
-		<input type="text" class="search-field" placeholder="Hledat...">
-		<i class="icon-remove-sign icon-2x"></i>
-		<ul class="search-results post-list"></ul><!-- /.search-results -->
-	</div><!-- /.search-form -->
-</div><!-- ./search-wrapper -->{% endif %}
-
-{% if page.image.feature %}<header class="masthead">
-	<div class="wrap">
-		<a href="{{ site.url }}" class="site-logo" rel="home" title="{{ site.title }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated bounceInDown"></a>
-	</div>
-</header><!-- /.masthead -->
-{% else %}<header class="masthead">
-	<div class="wrap">
-		<a href="{{ site.url }}" class="site-logo" rel="home" title="{{ site.title }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated fadeInUp"></a>
-		<h1 class="site-title animated fadeIn"><a href="{{ site.url }}">{{ site.title }}</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">{{ site.description }}</h2>
-	</div>
-</header><!-- /.masthead -->{% endif %}
+{% unless page.url == "/" %}
+{% if page.image.feature %}
+<header class="masthead">
+  <div class="wrap">
+    <a href="{{ site.url }}" class="site-logo-large" rel="home" title="{{ site.title }}">
+      <img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo">
+    </a>
+  </div>
+</header>
+{% else %}
+<header class="masthead">
+  <div class="wrap">
+    <a href="{{ site.url }}" class="site-logo-large" rel="home" title="{{ site.title }}">
+      <img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo">
+    </a>
+    <h1 class="site-title"><a href="{{ site.url }}">{{ site.title }}</a></h1>
+    <p class="site-description">{{ site.description }}</p>
+  </div>
+</header>
+{% endif %}
+{% endunless %}

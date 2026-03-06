@@ -1,19 +1,53 @@
 ---
-layout: page
-title: Baví mě lidem ulehčovat práci a dělat skvělou reklamu
-modified: 2013-01-18
-tags: [salesforce, ppc, projektovy management, online reklama]
+layout: default
+title: Filip Ambroz — Technology Partner & CTO
 ---
 
-<p>Další informace o mně najdete na <a href="http://www.linkedin.com/in/filipambroz">LinkedIn</a>.
-Chcete se mnou spolupracovat? </p>
+<section class="hero">
+  <div class="wrap">
+    <a href="{{ site.url }}" class="site-logo-large" rel="home" title="{{ site.title }}">
+      <img src="{{ site.url }}/images/{{ site.logo }}" width="160" height="160" alt="{{ site.title }} logo">
+    </a>
+    <h1>Filip Ambroz</h1>
+    <p class="subtitle">Technology Partner &amp; CTO</p>
+    <p class="tagline">Pomáhám organizacím zvládat složité digitální transformace — od cloudové infrastruktury a DevOps po řízení dodávek enterprise softwaru.</p>
+    <div class="hero-actions">
+      <a href="{{ site.url }}/about/" class="btn">Více o mně</a>
+      <a href="{{ site.url }}/kontakt/" class="btn btn-outline">Kontakt</a>
+    </div>
+  </div>
+</section>
 
-<div markdown="0"><a href="{{ site.url }}/kontakt/" class="btn">Kontaktujte mě</a></div>
+<section class="home-section">
+  <h2>Oblast expertízy</h2>
+  <div class="expertise-grid">
+    <div class="expertise-card">
+      <h3>Cloud &amp; infrastruktura</h3>
+      <p>Cloud-native architektury na Azure, Kubernetes orchestrace, infrastrukturní automatizace a návrh škálovatelných řešení.</p>
+    </div>
+    <div class="expertise-card">
+      <h3>DevOps &amp; dodávka</h3>
+      <p>GitLab CI/CD pipelines, leadership dodávkových týmů, agilní metodiky a kontinuální zlepšování procesů.</p>
+    </div>
+    <div class="expertise-card">
+      <h3>IT konzulting &amp; strategie</h3>
+      <p>Digitální transformace, řízení projektů v regulovaných odvětvích — finanční služby, obrana. Návrhy řešení, SOW, vztahy s klienty.</p>
+    </div>
+  </div>
+</section>
 
-<h2>Poslední články na mém blogu:</h2>
+<section class="home-section">
+  <p class="enrian-note">Partner ve společnosti <a href="https://enrian.com" target="_blank" rel="noopener noreferrer">Enrian Partners</a> — technologický konzulting a dodávka IT řešení.</p>
+</section>
 
-<ul class="post-list">
-{% for post in site.posts limit:10 %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d. %m. %Y" }}</time></span></a></article></li>
-{% endfor %}
-</ul>
+{% if site.posts.size > 0 %}
+<section class="home-section">
+  <h2>Poslední články</h2>
+  <ul class="post-list">
+  {% for post in site.posts limit:3 %}
+    <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d. %m. %Y" }}</time></span></a></article></li>
+  {% endfor %}
+  </ul>
+  <p><a href="{{ site.url }}/blog/">Všechny články &rarr;</a></p>
+</section>
+{% endif %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'cs' }}">
+<head>
+{% include head.html %}
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDJ9NK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<a class="skip-link" href="#main">Přeskočit na obsah</a>
+
+{% include navigation.html %}
+
+<main id="main">
+{{ content }}
+</main>
+
+<div class="footer-wrapper">
+  <footer>
+    {% include footer.html %}
+  </footer>
+</div>
+
+{% include scripts.html %}
+
+</body>
+</html>
