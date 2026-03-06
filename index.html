@@ -1,37 +1,35 @@
 ---
 layout: default
-title: Filip Ambroz — Technology Partner & CTO
+title: Filip Ambroz — Technologický partner & CTO
 ---
 
 <section class="hero">
   <div class="wrap">
-    <a href="{{ site.url }}" class="site-logo-large" rel="home" title="{{ site.title }}">
-      <img src="{{ site.url }}/images/{{ site.logo }}" width="160" height="160" alt="{{ site.title }} logo">
-    </a>
+    <span class="hero-label">Technologický partner & CTO</span>
     <h1>Filip Ambroz</h1>
-    <p class="subtitle">Technology Partner &amp; CTO</p>
+    <div class="hero-sep"></div>
     <p class="tagline">Pomáhám organizacím zvládat složité digitální transformace — od cloudové infrastruktury a DevOps po řízení dodávek enterprise softwaru.</p>
     <div class="hero-actions">
-      <a href="{{ site.url }}/about/" class="btn">Více o mně</a>
+      <a href="{{ site.url }}/about/" class="btn">O mně</a>
       <a href="{{ site.url }}/kontakt/" class="btn btn-outline">Kontakt</a>
     </div>
   </div>
 </section>
 
 <section class="home-section">
-  <h2>Oblast expertízy</h2>
+  <h2>Expertíza</h2>
   <div class="expertise-grid">
     <div class="expertise-card">
-      <h3>Cloud &amp; infrastruktura</h3>
+      <h3>Cloud & infrastruktura</h3>
       <p>Cloud-native architektury na Azure, Kubernetes orchestrace, infrastrukturní automatizace a návrh škálovatelných řešení.</p>
     </div>
     <div class="expertise-card">
-      <h3>DevOps &amp; dodávka</h3>
+      <h3>DevOps & dodávka</h3>
       <p>GitLab CI/CD pipelines, leadership dodávkových týmů, agilní metodiky a kontinuální zlepšování procesů.</p>
     </div>
     <div class="expertise-card">
-      <h3>IT konzulting &amp; strategie</h3>
-      <p>Digitální transformace, řízení projektů v regulovaných odvětvích — finanční služby, obrana. Návrhy řešení, SOW, vztahy s klienty.</p>
+      <h3>IT konzulting & strategie</h3>
+      <p>Digitální transformace v regulovaných odvětvích — finanční služby, obrana. Návrhy řešení, SOW, klientské vztahy.</p>
     </div>
   </div>
 </section>
@@ -48,6 +46,6 @@ title: Filip Ambroz — Technology Partner & CTO
     <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d. %m. %Y" }}</time></span></a></article></li>
   {% endfor %}
   </ul>
-  <p><a href="{{ site.url }}/blog/">Všechny články &rarr;</a></p>
+  <p style="margin-top: var(--space-sm);"><a href="{{ site.url }}/blog/">Všechny články &rarr;</a></p>
 </section>
 {% endif %}

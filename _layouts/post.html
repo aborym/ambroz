@@ -6,7 +6,7 @@ layout: default
   {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" loading="lazy" decoding="async">{% endif %}
   <div class="entry-wrapper">
     <header class="entry-header">
-      <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
+      <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="Články s tagem {{ tag }}">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
       {% if page.link %}
         <h1 class="entry-title"><a href="{{ page.link }}">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %} <span class="link-arrow">&rarr;</span></a></h1>
       {% else %}
@@ -15,14 +15,14 @@ layout: default
     </header>
     <footer class="entry-meta">
       <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }}" class="author-photo" loading="lazy" decoding="async">
-      <span class="author vcard">Napsal <span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+      <span class="author vcard">Napsal <span class="fn"><a href="{{ site.url }}/about/" title="O autorovi">{{ site.owner.name }}</a></span></span>
       <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d. %m. %Y" }}</time></span>
       {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}">{{ page.modified | date: "%d. %m. %Y" }}</time></span>{% endif %}
       <span><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">Odkaz</a></span>
       {% if page.share %}
       <span class="social-share">
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">LinkedIn</a>
-        <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" title="Share on Twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" title="Sdílet na LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="Sdílet na LinkedIn">LinkedIn</a>
+        <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" title="Sdílet na Twitter" target="_blank" rel="noopener noreferrer" aria-label="Sdílet na Twitter">Twitter</a>
       </span>
       {% endif %}
     </footer>

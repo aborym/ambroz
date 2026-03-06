@@ -1,8 +1,6 @@
 <div class="navigation-wrapper">
   <nav aria-label="Hlavní navigace" id="site-nav">
-    <a href="{{ site.url }}" class="site-logo" rel="home" title="{{ site.title }}">
-      <img src="{{ site.url }}/images/{{ site.logo }}" width="40" height="40" alt="{{ site.title }}" loading="eager">
-    </a>
+    <a href="{{ site.url }}" class="site-name">filipambroz</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Otevřít menu">
       <span class="nav-toggle-icon"></span>
     </button>
@@ -19,25 +17,3 @@
     </ul>
   </nav>
 </div>
-
-{% unless page.url == "/" %}
-{% if page.image.feature %}
-<header class="masthead">
-  <div class="wrap">
-    <a href="{{ site.url }}" class="site-logo-large" rel="home" title="{{ site.title }}">
-      <img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo">
-    </a>
-  </div>
-</header>
-{% else %}
-<header class="masthead">
-  <div class="wrap">
-    <a href="{{ site.url }}" class="site-logo-large" rel="home" title="{{ site.title }}">
-      <img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo">
-    </a>
-    <h1 class="site-title"><a href="{{ site.url }}">{{ site.title }}</a></h1>
-    <p class="site-description">{{ site.description }}</p>
-  </div>
-</header>
-{% endif %}
-{% endunless %}

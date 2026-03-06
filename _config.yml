@@ -1,8 +1,8 @@
 title: Filip Ambroz
-tagline: Technology Partner & CTO
+tagline: Technologický partner & CTO
 description: >-
-  Technology partner and IT consulting leader specializing in cloud infrastructure,
-  DevOps engineering, and enterprise software delivery. Partner at Enrian Partners.
+  Technologický partner a lídr v oblasti IT konzultingu. Specializace na cloudovou
+  infrastrukturu, DevOps engineering a dodávku enterprise softwaru. Partner v Enrian Partners.
 logo: site-logo.png
 url: https://ambroz.cz
 lang: cs
@@ -36,7 +36,7 @@ bing_verify: FE4C52DB573295A110479ECF77FD780C
 
 # Navigation links
 links:
-  - title: About
+  - title: O mně
     url: /about/
   - title: Blog
     url: /blog/
