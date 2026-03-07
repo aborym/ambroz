@@ -1,3 +1,10 @@
-_site/*
+_site/
 .DS_Store
 .ruby-version
+node_modules/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+.env
+.env.*

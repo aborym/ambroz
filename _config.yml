@@ -1,72 +1,67 @@
-title:            Filip Ambrož 
-description:      Projektový manažer se specializací na online marketing a vývoj aplikací
-logo:             site-logo.png
-disqus_shortname: filipambroz
-search:           true
-# Change url to your domain. Leave localhost server or blank when working locally.
-url:              https://ambroz.cz
+title: Filip Ambroz
+tagline: Technologický partner & CTO
+description: >-
+  Technologický partner a lídr v oblasti IT konzultingu. Specializace na cloudovou
+  infrastrukturu, DevOps engineering a dodávku enterprise softwaru. Partner v Enrian Partners.
+logo: site-logo.png
+url: https://ambroz.cz
+lang: cs
+locale: cs_CZ
 
 # Owner/author information
 owner:
-  name:           Filip Ambrož
-  avatar:         filip-photo.png
-  email:          filip@ambroz.cz
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        filipambroz
-  facebook:       filipambroz
-  github:         Aborym
-  stackexchange:  
-  linkedin:       filipambroz
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/115921243987379721385
+  name: Filip Ambroz
+  avatar: filip-photo.png
+  email: filip@ambroz.cz
+  twitter: AborymCZ
+  facebook: filipambroz
+  github: Aborym
+  linkedin: filipambroz
 
-# Analytics and webmaster tools stuff goes here
-google_analytics: 
-google_verify:    JMGwW2Y-l6E_d8UKdz6cZ75AZUSfPDVCRBKyIXUxpHg
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:      FE4C52DB573295A110479ECF77FD780C
+# For jekyll-seo-tag
+author:
+  name: Filip Ambroz
+  url: https://ambroz.cz
+  twitter: AborymCZ
 
-# Links to include in top navigation
-# For external links add external: true
+social:
+  name: Filip Ambroz
+  links:
+    - https://www.linkedin.com/in/filipambroz
+    - https://github.com/Aborym
+
+# Analytics and webmaster tools
+google_verify: JMGwW2Y-l6E_d8UKdz6cZ75AZUSfPDVCRBKyIXUxpHg
+bing_verify: FE4C52DB573295A110479ECF77FD780C
+
+# Navigation links
 links:
-
-
-  - title: Salesforce
-    url: /salesforce/
-  - title: PPC
-    url: /ppc/
-  - title: Projektový management
-    url: /project-management/
-  - title: Kontakt
-    url: /kontakt/
+  - title: O mně
+    url: /about/
   - title: Blog
     url: /blog/
+  - title: Kontakt
+    url: /kontakt/
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Prague
-future:      true
-rouge:      true
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+# Build settings
+theme: null
+timezone: Europe/Prague
+markdown: kramdown
+permalink: /:categories/:title/
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
 
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
