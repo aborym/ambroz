@@ -6,3 +6,5 @@ node_modules/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
+.env
+.env.*
