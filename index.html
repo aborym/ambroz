@@ -1,22 +1,51 @@
 ---
-layout: page
-title: Účetnictví už se nemusíte bát
-modified: 2013-01-18
-tags: [ucetnictvi, sluzby, zpracovani dani, finance]
+layout: default
+title: Filip Ambroz — Technologický partner & CTO
 ---
 
-<h2>Baví mě lidem ulehčovat práci a dělat skvělou reklamu.</h2>
+<section class="hero">
+  <div class="wrap">
+    <span class="hero-label">Technologický partner & CTO</span>
+    <h1>Filip Ambroz</h1>
+    <div class="hero-sep"></div>
+    <p class="tagline">Pomáhám organizacím zvládat složité digitální transformace — od cloudové infrastruktury a DevOps po řízení dodávek enterprise softwaru.</p>
+    <div class="hero-actions">
+      <a href="{{ site.url }}/about/" class="btn">O mně</a>
+      <a href="{{ site.url }}/kontakt/" class="btn btn-outline">Kontakt</a>
+    </div>
+  </div>
+</section>
 
+<section class="home-section">
+  <h2>Expertíza</h2>
+  <div class="expertise-grid">
+    <div class="expertise-card">
+      <h3>Cloud & infrastruktura</h3>
+      <p>Cloud-native architektury na Azure, Kubernetes orchestrace, infrastrukturní automatizace a návrh škálovatelných řešení.</p>
+    </div>
+    <div class="expertise-card">
+      <h3>DevOps & dodávka</h3>
+      <p>GitLab CI/CD pipelines, leadership dodávkových týmů, agilní metodiky a kontinuální zlepšování procesů.</p>
+    </div>
+    <div class="expertise-card">
+      <h3>IT konzulting & strategie</h3>
+      <p>Digitální transformace v regulovaných odvětvích — finanční služby, obrana. Návrhy řešení, SOW, klientské vztahy.</p>
+    </div>
+  </div>
+</section>
 
-<p>Další informace o mně najdete na <a href="http://www.linkedin.com/in/filipambroz">LinkedIn</a>.
-Chcete se mnou spolupracovat? </p>
+<section class="home-section">
+  <p class="enrian-note">Partner ve společnosti <a href="https://enrian.com" target="_blank" rel="noopener noreferrer">Enrian Partners</a> — technologický konzulting a dodávka IT řešení.</p>
+</section>
 
-<div markdown="0"><a href="{{ site.url }}/kontakt/" class="btn">Kontaktujte mě</a></div>
-
-<h2>Poslední články na mém blogu:</h2>
-
-<ul class="post-list">
-{% for post in site.posts limit:10 %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d. %m. %Y" }}</time></span></a></article></li>
-{% endfor %}
-</ul>
+{% if site.posts.size > 0 %}
+<section class="home-section">
+  <h2>Poslední články</h2>
+  <ul class="post-list">
+  {% for post in site.posts limit:3 %}
+    <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d. %m. %Y" }}</time></span></a></article></li>
+  {% endfor %}
+  </ul>
+  <p style="margin-top: var(--space-sm);"><a href="{{ site.url }}/blog/">Všechny články &rarr;</a></p>
+</section>
+{% endif %}

@@ -2,30 +2,22 @@
 layout: page
 permalink: /kontakt/
 title: Kontakt
-modified: 2013-01-18
-tags: [salesforce, ppc, projektovy management, online reklama]
 ---
 
-#Filip Ambrož
+Filip Ambroz
 
-
-##Projektový manažer se specializací na online marketing a vývoj aplikací
-
-
-IČ: 01957597
-
-
-Kontakt:
-
-Na Stuchlíkovci 737
-
-735 14 Orlová Lutyně
-
-
-[me@filipambroz.cz](mailto:me@filipambroz.cz)
-
+[filip@ambroz.cz](mailto:filip@ambroz.cz)
 
 [+420 739 018 877](tel:+420739018877)
 
+[LinkedIn](https://www.linkedin.com/in/filipambroz){:target="_blank" rel="noopener noreferrer"}
 
-Nejsem plátce DPH.
+---
+
+IČ: 01957597
+
+DIČ: CZ8507205608
+
+Adresa sídla: Na Stuchlíkovci 737, 735 14 Orlová Lutyně
+
+Bankovní spojení: Airbank — 1200672017/3030
