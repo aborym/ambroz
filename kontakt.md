@@ -1,23 +1,11 @@
 ---
 layout: page
 permalink: /kontakt/
-title: Kontakt
+title: Contact
 ---
 
-Filip Ambroz
+This page has moved. Redirecting...
 
-[filip@ambroz.cz](mailto:filip@ambroz.cz)
+<meta http-equiv="refresh" content="0;url={{ site.url }}/contact/">
 
-[+420 739 018 877](tel:+420739018877)
-
-[LinkedIn](https://www.linkedin.com/in/filipambroz){:target="_blank" rel="noopener noreferrer"}
-
----
-
-IČ: 01957597
-
-DIČ: CZ8507205608
-
-Adresa sídla: Na Stuchlíkovci 737, 735 14 Orlová Lutyně
-
-Bankovní spojení: Airbank — 1200672017/3030
+[Go to Contact page]({{ site.url }}/contact/)

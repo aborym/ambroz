@@ -1,34 +1,28 @@
 ---
 layout: page
 permalink: /about/
-title: O mně
+title: About
 ---
 
-Jsem technologický partner a lídr v oblasti IT konzultingu se sídlem v Praze. Specializuji se na cloudovou infrastrukturu, DevOps engineering a dodávku enterprise softwaru.
+I'm a tech partner and CTO based in Prague, working at the intersection of cloud infrastructure, DevOps, and AI engineering. I like building things that work — and tinkering with things until they do.
 
-## Co dělám
+## What I Do
 
-Jako Partner ve společnosti [Enrian Partners](https://enrian.com) působím na průsečíku technické strategie a praktické realizace. Pomáhám organizacím zvládat složité digitální transformace s jasnou vizí a sebedůvěrou.
+As a Partner at [Enrian Partners](https://enrian.com), I lead technical strategy and delivery for enterprise clients. My day job involves cloud-native architectures, Kubernetes orchestration, CI/CD pipelines, and managing delivery teams in regulated industries like financial services and defense.
 
-Moje technické zaměření zahrnuje:
+My current focus areas:
 
-- **Cloud-native architektury** na platformě Azure
-- **Kubernetes** orchestrace a kontejnerizace
-- **GitLab CI/CD** pipelines a automatizace
-- **Infrastrukturní automatizace** a Infrastructure as Code
+- **Cloud & Infrastructure** — Azure, Kubernetes, Infrastructure as Code
+- **DevOps** — GitLab CI/CD, delivery automation, process engineering
+- **AI Engineering** — LLM orchestration, AI-assisted workflows, prompt engineering, integrating AI into dev toolchains
+- **Consulting** — Solution design, digital transformation, client advisory
 
-Vedu dodávkové týmy na náročných projektech v regulovaných odvětvích — finanční služby a obrana — kde jsou přesnost, bezpečnost a spolehlivost základním požadavkem.
+## The Backstory
 
-## Profesní cesta
+I started my career at [Ataxo](https://ataxo.com), moving through project management, customer success, and development leadership. Since 2017, I've been at Enrian Partners — first as Senior Delivery Lead, now as Partner with CTO-level responsibilities.
 
-Svou kariéru jsem začal v [Ataxo](https://ataxo.com), kde jsem postupně prošel pozicemi od projektového manažera přes Head of Customer Success až po Head of Development. Tato zkušenost mi dala hluboký vhled do celého životního cyklu vývoje softwaru a řízení zákaznických vztahů.
+## This Site
 
-Od roku 2017 působím v Enrian Partners, kde jsem začínal jako Senior Delivery Lead a postupně přešel do role Partnera s odpovědnostmi na úrovni CTO.
+This is my personal tech sandbox. Work-related content goes on the company blog. Here I write about the things I tinker with on my own time — macOS automation, home network experiments, shell scripts, and whatever else catches my attention.
 
-## Nad rámec techniky
-
-Kromě technického vedení přináším do každého projektu i obchodní perspektivu — řídím návrhy řešení, Statements of Work a vztahy s klienty se stejnou pečlivostí, jakou věnuji architektonickému designu. Jsem stejně komfortní při prezentaci C-level stakeholderům jako při párování s inženýry v týmu.
-
-Komunikuji plynule česky i anglicky a pracuji napříč evropskými časovými pásmy.
-
-<div markdown="0"><a href="{{ site.url }}/kontakt/" class="btn">Kontaktujte mě</a></div>
+<div markdown="0"><a href="{{ site.url }}/contact/" class="btn">Get in touch</a></div>
