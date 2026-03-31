@@ -434,17 +434,6 @@ main {
   position: relative;
   padding: var(--space-xl) var(--space-md) var(--space-lg);
   overflow: hidden;
-  box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.4);
-}
-
-/* Subtle dot-grid background */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(74, 222, 128, 0.06) 1px, transparent 1px);
-  background-size: 32px 32px;
-  pointer-events: none;
 }
 
 .hero .wrap {
