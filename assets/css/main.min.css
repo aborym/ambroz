@@ -54,9 +54,9 @@ body::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
-  opacity: 0.35;
+  opacity: 0.25;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 2;
   mix-blend-mode: overlay;
 }
 
@@ -538,44 +538,44 @@ main {
 /* Layer 1: small distant stars — slow drift */
 .starfield-layer--1 {
   background-image:
-    radial-gradient(1px 1px at 50px 30px, rgba(74, 222, 128, 0.5), transparent),
-    radial-gradient(1px 1px at 180px 80px, rgba(255, 255, 255, 0.4), transparent),
-    radial-gradient(1px 1px at 320px 160px, rgba(74, 222, 128, 0.3), transparent),
-    radial-gradient(1px 1px at 420px 220px, rgba(255, 255, 255, 0.3), transparent),
-    radial-gradient(1px 1px at 100px 280px, rgba(67, 184, 212, 0.3), transparent),
-    radial-gradient(1px 1px at 540px 120px, rgba(255, 255, 255, 0.35), transparent),
-    radial-gradient(1px 1px at 660px 340px, rgba(74, 222, 128, 0.25), transparent),
-    radial-gradient(1px 1px at 240px 380px, rgba(255, 255, 255, 0.3), transparent),
-    radial-gradient(1px 1px at 780px 60px, rgba(67, 184, 212, 0.2), transparent),
-    radial-gradient(1px 1px at 600px 260px, rgba(255, 255, 255, 0.25), transparent);
+    radial-gradient(1.5px 1.5px at 50px 30px, rgba(74, 222, 128, 0.7), transparent),
+    radial-gradient(1.5px 1.5px at 180px 80px, rgba(255, 255, 255, 0.65), transparent),
+    radial-gradient(1.5px 1.5px at 320px 160px, rgba(74, 222, 128, 0.55), transparent),
+    radial-gradient(1.5px 1.5px at 420px 220px, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1.5px 1.5px at 100px 280px, rgba(67, 184, 212, 0.5), transparent),
+    radial-gradient(1.5px 1.5px at 540px 120px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1.5px 1.5px at 660px 340px, rgba(74, 222, 128, 0.45), transparent),
+    radial-gradient(1.5px 1.5px at 240px 380px, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1.5px 1.5px at 780px 60px, rgba(67, 184, 212, 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 600px 260px, rgba(255, 255, 255, 0.45), transparent);
   background-size: 800px 420px;
-  animation: starDrift 120s linear infinite;
+  animation: starDrift 40s linear infinite;
 }
 
 /* Layer 2: medium stars — moderate drift */
 .starfield-layer--2 {
   background-image:
-    radial-gradient(1.5px 1.5px at 70px 150px, rgba(74, 222, 128, 0.6), transparent),
-    radial-gradient(1.5px 1.5px at 350px 90px, rgba(255, 255, 255, 0.5), transparent),
-    radial-gradient(1px 1px at 500px 300px, rgba(67, 184, 212, 0.4), transparent),
-    radial-gradient(1.5px 1.5px at 200px 240px, rgba(255, 255, 255, 0.45), transparent),
-    radial-gradient(1px 1px at 650px 180px, rgba(74, 222, 128, 0.35), transparent),
-    radial-gradient(1.5px 1.5px at 450px 50px, rgba(255, 255, 255, 0.3), transparent),
-    radial-gradient(1px 1px at 120px 350px, rgba(74, 222, 128, 0.3), transparent);
+    radial-gradient(2px 2px at 70px 150px, rgba(74, 222, 128, 0.8), transparent),
+    radial-gradient(2px 2px at 350px 90px, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(2px 2px at 500px 300px, rgba(67, 184, 212, 0.65), transparent),
+    radial-gradient(2px 2px at 200px 240px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(2px 2px at 650px 180px, rgba(74, 222, 128, 0.6), transparent),
+    radial-gradient(2px 2px at 450px 50px, rgba(255, 255, 255, 0.55), transparent),
+    radial-gradient(2px 2px at 120px 350px, rgba(74, 222, 128, 0.5), transparent);
   background-size: 700px 400px;
-  animation: starDrift 80s linear infinite reverse;
+  animation: starDrift 28s linear infinite reverse;
 }
 
 /* Layer 3: bright close stars — faster drift, occasional twinkle */
 .starfield-layer--3 {
   background-image:
-    radial-gradient(2px 2px at 150px 200px, rgba(74, 222, 128, 0.8), transparent),
-    radial-gradient(2px 2px at 400px 100px, rgba(255, 255, 255, 0.7), transparent),
-    radial-gradient(2px 2px at 600px 300px, rgba(67, 184, 212, 0.6), transparent),
-    radial-gradient(1.5px 1.5px at 280px 340px, rgba(74, 222, 128, 0.5), transparent),
-    radial-gradient(2px 2px at 720px 160px, rgba(255, 255, 255, 0.6), transparent);
+    radial-gradient(2.5px 2.5px at 150px 200px, rgba(74, 222, 128, 1), transparent),
+    radial-gradient(3px 3px at 400px 100px, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(2.5px 2.5px at 600px 300px, rgba(67, 184, 212, 0.85), transparent),
+    radial-gradient(2px 2px at 280px 340px, rgba(74, 222, 128, 0.75), transparent),
+    radial-gradient(3px 3px at 720px 160px, rgba(255, 255, 255, 0.85), transparent);
   background-size: 900px 450px;
-  animation: starDrift 60s linear infinite, starTwinkle 4s ease-in-out infinite;
+  animation: starDrift 18s linear infinite, starTwinkle 3s ease-in-out infinite;
 }
 
 @keyframes starDrift {
@@ -585,7 +585,7 @@ main {
 
 @keyframes starTwinkle {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
+  50% { opacity: 0.5; }
 }
 
 /* Hero radial glow behind text */
@@ -732,29 +732,6 @@ main,
 }
 
 /* Personal / Off the Clock section */
-.personal-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
-  margin-bottom: var(--space-md);
-}
-
-.personal-tag {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-secondary);
-  padding: 0.25rem 0.75rem;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  letter-spacing: 0.01em;
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.personal-tag:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-}
-
 .personal-note {
   font-family: var(--font-mono);
   font-size: 0.8rem;
