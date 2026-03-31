@@ -9,10 +9,10 @@
   --color-surface-raised: #14142a;
   --color-text: #d8d8e4;
   --color-text-secondary: #8a8a9e;
-  --color-accent: #4BB277;
-  --color-accent-hover: #5cc98a;
-  --color-accent-dim: rgba(75, 178, 119, 0.1);
-  --color-border: rgba(75, 178, 119, 0.12);
+  --color-accent: #4ADE80;
+  --color-accent-hover: #6EE7A0;
+  --color-accent-dim: rgba(74, 222, 128, 0.1);
+  --color-border: rgba(74, 222, 128, 0.12);
   --color-border-subtle: rgba(255, 255, 255, 0.06);
   --color-code-bg: #0c0c18;
 
@@ -414,7 +414,7 @@ main {
   background-color: var(--color-accent-hover);
   border-color: var(--color-accent-hover);
   color: var(--color-bg);
-  box-shadow: 0 0 20px rgba(75, 178, 119, 0.25);
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.25);
 }
 
 .btn-outline {
@@ -442,7 +442,7 @@ main {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(75, 178, 119, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(74, 222, 128, 0.06) 1px, transparent 1px);
   background-size: 32px 32px;
   pointer-events: none;
 }
@@ -517,41 +517,75 @@ main {
   background: var(--color-accent);
   margin: var(--space-md) 0;
   opacity: 0.7;
-  box-shadow: 0 0 12px rgba(75, 178, 119, 0.3);
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.3);
 }
 
-/* Hero circuit SVG overlay */
-.hero-circuit {
-  position: absolute;
+/* Full-page starfield background */
+.starfield {
+  position: fixed;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
   pointer-events: none;
   z-index: 0;
 }
 
-.circuit-node {
-  animation: nodePulse 3s ease-in-out infinite;
-}
-.circuit-node--center {
-  animation-duration: 2.5s;
-}
-
-.circuit-pulse {
-  animation: pulseRing 3s ease-out infinite;
-}
-.circuit-pulse--delay1 { animation-delay: 0.7s; }
-.circuit-pulse--delay2 { animation-delay: 1.4s; }
-.circuit-pulse--delay3 { animation-delay: 2.1s; }
-
-@keyframes nodePulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.8; }
+.starfield-layer {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
 }
 
-@keyframes pulseRing {
-  0% { r: 3; opacity: 0.5; }
-  100% { r: 16; opacity: 0; }
+/* Layer 1: small distant stars — slow drift */
+.starfield-layer--1 {
+  background-image:
+    radial-gradient(1px 1px at 50px 30px, rgba(74, 222, 128, 0.5), transparent),
+    radial-gradient(1px 1px at 180px 80px, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 320px 160px, rgba(74, 222, 128, 0.3), transparent),
+    radial-gradient(1px 1px at 420px 220px, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 100px 280px, rgba(67, 184, 212, 0.3), transparent),
+    radial-gradient(1px 1px at 540px 120px, rgba(255, 255, 255, 0.35), transparent),
+    radial-gradient(1px 1px at 660px 340px, rgba(74, 222, 128, 0.25), transparent),
+    radial-gradient(1px 1px at 240px 380px, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 780px 60px, rgba(67, 184, 212, 0.2), transparent),
+    radial-gradient(1px 1px at 600px 260px, rgba(255, 255, 255, 0.25), transparent);
+  background-size: 800px 420px;
+  animation: starDrift 120s linear infinite;
+}
+
+/* Layer 2: medium stars — moderate drift */
+.starfield-layer--2 {
+  background-image:
+    radial-gradient(1.5px 1.5px at 70px 150px, rgba(74, 222, 128, 0.6), transparent),
+    radial-gradient(1.5px 1.5px at 350px 90px, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 500px 300px, rgba(67, 184, 212, 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 200px 240px, rgba(255, 255, 255, 0.45), transparent),
+    radial-gradient(1px 1px at 650px 180px, rgba(74, 222, 128, 0.35), transparent),
+    radial-gradient(1.5px 1.5px at 450px 50px, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 120px 350px, rgba(74, 222, 128, 0.3), transparent);
+  background-size: 700px 400px;
+  animation: starDrift 80s linear infinite reverse;
+}
+
+/* Layer 3: bright close stars — faster drift, occasional twinkle */
+.starfield-layer--3 {
+  background-image:
+    radial-gradient(2px 2px at 150px 200px, rgba(74, 222, 128, 0.8), transparent),
+    radial-gradient(2px 2px at 400px 100px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(2px 2px at 600px 300px, rgba(67, 184, 212, 0.6), transparent),
+    radial-gradient(1.5px 1.5px at 280px 340px, rgba(74, 222, 128, 0.5), transparent),
+    radial-gradient(2px 2px at 720px 160px, rgba(255, 255, 255, 0.6), transparent);
+  background-size: 900px 450px;
+  animation: starDrift 60s linear infinite, starTwinkle 4s ease-in-out infinite;
+}
+
+@keyframes starDrift {
+  from { transform: translateY(0) translateX(0); }
+  to { transform: translateY(-420px) translateX(-100px); }
+}
+
+@keyframes starTwinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
 }
 
 /* Hero radial glow behind text */
@@ -562,9 +596,17 @@ main {
   left: -20%;
   width: 80%;
   height: 180%;
-  background: radial-gradient(ellipse at center, rgba(75, 178, 119, 0.06) 0%, transparent 65%);
+  background: radial-gradient(ellipse at center, rgba(74, 222, 128, 0.05) 0%, transparent 65%);
   pointer-events: none;
   z-index: -1;
+}
+
+/* Make sure content layers above starfield */
+.navigation-wrapper,
+main,
+.footer-wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 /* Scroll-reveal for sections below fold */
@@ -580,13 +622,9 @@ main {
 
 /* Reduced motion — disable all animations */
 @media (prefers-reduced-motion: reduce) {
-  .circuit-node,
-  .circuit-pulse,
-  .data-dot,
-  .data-dot animateMotion {
+  .starfield-layer {
     animation: none !important;
   }
-  .data-dot { display: none; }
   .hero-label, .hero h1, .hero-sep, .hero .tagline, .hero-actions {
     animation: none !important;
     opacity: 1 !important;
@@ -655,7 +693,7 @@ main {
 .expertise-card:hover {
   transform: translateY(-2px);
   border-top-color: var(--color-accent);
-  box-shadow: 0 -4px 24px rgba(75, 178, 119, 0.1);
+  box-shadow: 0 -4px 24px rgba(74, 222, 128, 0.1);
 }
 
 .card-path {
@@ -693,6 +731,37 @@ main {
   font-size: 0.9rem;
 }
 
+/* Personal / Off the Clock section */
+.personal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.personal-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  letter-spacing: 0.01em;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.personal-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.personal-note {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
 /* ========================================================================
    Code & Syntax
    ======================================================================== */
@@ -722,7 +791,7 @@ pre {
 /* Syntax highlighting (Rouge — dark theme) */
 .highlight { margin-bottom: var(--space-md); }
 .highlight pre { margin: 0; border: none; }
-.highlight .hll { background-color: rgba(75, 178, 119, 0.1); }
+.highlight .hll { background-color: rgba(74, 222, 128, 0.1); }
 .highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #5c6370; font-style: italic; }
 .highlight .cp { color: #c678dd; }
 .highlight .err { color: #e06c75; }

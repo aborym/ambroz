@@ -1,54 +1,5 @@
-<svg class="hero-circuit" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-  <defs>
-    <linearGradient id="trace-fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="var(--color-accent)" stop-opacity="0"/>
-      <stop offset="50%" stop-color="var(--color-accent)" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="trace-fade-v" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="var(--color-accent)" stop-opacity="0"/>
-      <stop offset="50%" stop-color="var(--color-accent)" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Horizontal traces -->
-  <line x1="0" y1="80" x2="800" y2="80" stroke="url(#trace-fade)" stroke-width="0.5"/>
-  <line x1="0" y1="200" x2="800" y2="200" stroke="url(#trace-fade)" stroke-width="0.5"/>
-  <line x1="0" y1="320" x2="800" y2="320" stroke="url(#trace-fade)" stroke-width="0.5"/>
-
-  <!-- Vertical traces -->
-  <line x1="160" y1="0" x2="160" y2="400" stroke="url(#trace-fade-v)" stroke-width="0.5"/>
-  <line x1="400" y1="0" x2="400" y2="400" stroke="url(#trace-fade-v)" stroke-width="0.5"/>
-  <line x1="640" y1="0" x2="640" y2="400" stroke="url(#trace-fade-v)" stroke-width="0.5"/>
-
-  <!-- Diagonal traces -->
-  <line x1="160" y1="80" x2="400" y2="200" stroke="var(--color-accent)" stroke-width="0.3" opacity="0.1"/>
-  <line x1="400" y1="200" x2="640" y2="80" stroke="var(--color-accent)" stroke-width="0.3" opacity="0.1"/>
-  <line x1="640" y1="320" x2="400" y2="200" stroke="var(--color-accent)" stroke-width="0.3" opacity="0.1"/>
-
-  <!-- Intersection nodes (pulsing) -->
-  <circle cx="160" cy="80" r="3" fill="var(--color-accent)" opacity="0.6" class="circuit-node"/>
-  <circle cx="400" cy="200" r="4" fill="var(--color-accent)" opacity="0.7" class="circuit-node circuit-node--center"/>
-  <circle cx="640" cy="80" r="3" fill="var(--color-accent)" opacity="0.5" class="circuit-node"/>
-  <circle cx="640" cy="320" r="3" fill="var(--color-accent)" opacity="0.4" class="circuit-node"/>
-  <circle cx="160" cy="320" r="2.5" fill="var(--color-accent)" opacity="0.3" class="circuit-node"/>
-  <circle cx="160" cy="200" r="2" fill="var(--color-accent)" opacity="0.35" class="circuit-node"/>
-
-  <!-- Pulse rings -->
-  <circle cx="160" cy="80" r="3" fill="none" stroke="var(--color-accent)" stroke-width="0.5" class="circuit-pulse"/>
-  <circle cx="400" cy="200" r="4" fill="none" stroke="var(--color-accent)" stroke-width="0.5" class="circuit-pulse circuit-pulse--delay1"/>
-  <circle cx="640" cy="80" r="3" fill="none" stroke="var(--color-accent)" stroke-width="0.5" class="circuit-pulse circuit-pulse--delay2"/>
-  <circle cx="640" cy="320" r="3" fill="none" stroke="var(--color-accent)" stroke-width="0.5" class="circuit-pulse circuit-pulse--delay3"/>
-
-  <!-- Data stream dots flowing along horizontal traces -->
-  <circle r="1.5" fill="var(--color-accent)" opacity="0.8" class="data-dot">
-    <animateMotion dur="4s" repeatCount="indefinite" path="M0,80 L800,80"/>
-  </circle>
-  <circle r="1.5" fill="var(--color-accent)" opacity="0.6" class="data-dot">
-    <animateMotion dur="5s" repeatCount="indefinite" path="M800,200 L0,200"/>
-  </circle>
-  <circle r="1" fill="var(--color-accent)" opacity="0.5" class="data-dot">
-    <animateMotion dur="6s" repeatCount="indefinite" path="M0,320 L800,320"/>
-  </circle>
-</svg>
+<div class="starfield" aria-hidden="true">
+  <div class="starfield-layer starfield-layer--1"></div>
+  <div class="starfield-layer starfield-layer--2"></div>
+  <div class="starfield-layer starfield-layer--3"></div>
+</div>
