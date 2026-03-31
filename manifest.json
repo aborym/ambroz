@@ -1,8 +1,26 @@
 {
-  "name": "Filip Ambroz",
+  "name": "Filip Ambroz — Tech Sandbox",
   "short_name": "Ambroz",
+  "description": "Cloud infrastructure, DevOps, AI engineering, and hands-on automation.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#080810",
-  "theme_color": "#080810"
+  "theme_color": "#080810",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "32x32"
+    }
+  ]
 }
