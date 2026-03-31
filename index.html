@@ -46,20 +46,3 @@ title: Filip Ambroz — Tech Partner & CTO
   <p class="enrian-note">Partner at <a href="https://enrian.com" target="_blank" rel="noopener noreferrer">Enrian Partners</a> — technology consulting and IT solution delivery.</p>
 </section>
 
-{% if site.posts.size > 0 %}
-<section class="home-section">
-  <h2>Latest Posts</h2>
-  <ul class="post-list">
-  {% for post in site.posts limit:3 %}
-    <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
-  {% endfor %}
-  </ul>
-  <p style="margin-top: var(--space-sm);"><a href="{{ site.url }}/blog/">All posts &rarr;</a></p>
-</section>
-{% endif %}
-
-<section class="home-section">
-  <h2>Off the Clock</h2>
-  <p class="personal-note">Father of three, keeper of tarantulas, and occasional mountain biker. When not in front of a terminal, you'll find me shuffling Magic: The Gathering decks, digging through black metal records, or lost in a sci-fi novel. Some of that leaks into the blog.</p>
-  <p class="personal-note"><a href="https://www.instagram.com/aborymCZ/" target="_blank" rel="noopener noreferrer">Instagram</a> for the occasional photo.</p>
-</section>
