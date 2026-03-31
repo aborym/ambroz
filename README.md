@@ -54,8 +54,6 @@ These external services are configured and may require manual setup:
 | Service | Config location | Requires account |
 |---------|----------------|-----------------|
 | **Google Tag Manager** | `_config.yml` → `gtm_id` | [tagmanager.google.com](https://tagmanager.google.com) |
-| **Google Search Console** | `_config.yml` → `google_verify` | [search.google.com/search-console](https://search.google.com/search-console) |
-| **Bing Webmaster Tools** | `_config.yml` → `bing_verify` | [bing.com/webmasters](https://www.bing.com/webmasters) |
 | **GitHub Pages** | Repository Settings → Pages | GitHub account |
 | **Custom domain DNS** | Domain registrar + `CNAME` file | Domain registrar |
 
