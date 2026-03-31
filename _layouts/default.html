@@ -5,9 +5,9 @@
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDJ9NK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+{% if site.gtm_id %}<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_id }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>{% endif %}
 
 <a class="skip-link" href="#main">Skip to content</a>
 
